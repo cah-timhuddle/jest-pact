@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.0-beta](https://github.com/YOU54F/jest-pact/compare/v0.4.4...v0.5.0-beta) (2019-11-01)
+
+
 ### [0.4.5](https://github.com/YOU54F/jest-pact/compare/v0.4.4...v0.4.5) (2019-10-17)
 
 

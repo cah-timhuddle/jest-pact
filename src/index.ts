@@ -1,4 +1,4 @@
-import * as pact from "@pact-foundation/pact";
+import * as pact from "@pact-foundation/pact/dist/pact";
 import * as path from "path";
 
 export interface PactOptions {

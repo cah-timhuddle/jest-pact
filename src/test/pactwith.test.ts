@@ -1,4 +1,4 @@
-import { InteractionObject } from "@pact-foundation/pact";
+import { InteractionObject } from "@pact-foundation/pact/dist";
 import * as supertest from "supertest";
 import { pactWith } from "../index";
 
