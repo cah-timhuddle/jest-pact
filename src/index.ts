@@ -44,16 +44,7 @@ const jestPactWrapper = (options: JestPactOptions, tests: any) => () => {
   const pactTestTimeout = options.timeout || 30000;
 
   describe(`with ${pactTestTimeout} ms timeout for Pact`, () => {
-    let originalTimeout: number;
-
-    beforeAll(() => {
-      originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
-      jasmine.DEFAULT_TIMEOUT_INTERVAL = pactTestTimeout;
-    });
-
-    afterAll(() => {
-      jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout;
-    });
+    jest.setTimeout(pactTestTimeout);
 
     tests(setupProvider(applyDefaults(options)));
   });
